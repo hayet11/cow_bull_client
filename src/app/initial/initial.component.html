@@ -1,0 +1,16 @@
+<div class="game-container1">
+    <form #userForm="ngForm" (ngSubmit)="start(userForm.value)" >
+        <div class="input-group">
+            <label for="player-name">Player Name :</label>
+            <input type="text" ngModel name="player-name" required>
+        </div>
+        <div class="input-group">
+            <label for="num-attempts">Number of attempts :</label>
+            <input type="number" ngModel name="num-attempts" required>
+        </div>
+        <button type="button" routerLink="play">Start Game</button>
+    </form>
+</div>
+
+
+
